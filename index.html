@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Studio - Generate AI Images</title>
+
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="src/script.js" defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7GB3PLJ54"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z7GB3PLJ54');
+    </script>
+
+    <!-- Ads -->
+    <script async src="//pl25948361.effectiveratecpm.com/f4/94/d3/f494d3f2350786adfcd45f76c692ead0.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>🎨 AI Art Studio 🎨</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Generate AI Images Instantly</h2>
+        <input type="text" id="prompt" placeholder="Enter your prompt...">
+        <select id="dimensions">
+            <option value="square">Square (768×768)</option>
+            <option value="wide">Wide (1024×576)</option>
+            <option value="tall">Tall (576×1024)</option>
+        </select>
+        <button onclick="generateImage()">🚀 Generate</button>
+
+        <div id="loading" class="loading">⏳ Generating images...</div>
+        <div id="output"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 AI Art Studio | Developed by Zero</p>
+    </footer>
+
+</body>
+</html>
